@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
+import CollapsibleText from "../components/CollapsibleText";
 
 function Dashboard() {
     const navigate = useNavigate();
@@ -84,7 +85,7 @@ function Dashboard() {
                             {post.username}
                         </span>
                     </p>
-                    <p>{post.content}</p>
+                    <CollapsibleText text={post.content} maxLines={4} />
 
                     {/* ===== BUTTONS ===== */}
                     <div style={{ marginTop: "10px" }}>
