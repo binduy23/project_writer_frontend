@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:#D0B8A8;
+}
+
+.nav-title {
+  font-size: xx-large;
+  font-variant: small-caps  ;
+  font-family: Trattatello, fantasy;
+  cursor: pointer;
+  color:cornsilk;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #3F4E4F;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
