@@ -19,7 +19,7 @@ function Dashboard() {
             setLoggedInUserId(decoded.id);
         }
 
-        fetch("http://localhost:5000/api/posts")
+        fetch(`${API}/api/posts`)
             .then((res) => res.json())
             .then((data) => setPosts(data))
             .catch((err) => console.log(err));
