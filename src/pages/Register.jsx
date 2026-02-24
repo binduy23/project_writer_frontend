@@ -12,7 +12,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${API}/register`, {
+      const res = await fetch(`${API}/api/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
